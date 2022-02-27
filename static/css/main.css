@@ -1,0 +1,20 @@
+<style type="text/css">
+	#headerArea{
+		background-color: green;
+		position: relative;
+		padding: 2rem 2rem;
+		padding-right: 5px; 
+	}	
+	#headerLabel{
+		color: black;
+		font-size: 350%;
+		font-family: "Comic Sans Ms", cursive, sans-serif;
+		font-style: italic;
+	}
+	p{
+		color: rgb(25, 27, 33);
+	}
+	#articleDiv{
+		padding-top: 50px;
+	}
+</style>

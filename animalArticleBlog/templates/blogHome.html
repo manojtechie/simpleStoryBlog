@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+	{% for post in posts %}
+		<div id= "articleDiv">
+			<img src="{{ post.image.url}}" class= "img-thumbnail" alt='' width="150" height="100">
+			<article>
+				<time>Published: {{ post.published_date }}</time>
+				<h2><a href="">{{ post.title }}</a></h2>
+				<p style= "font-size:120%; font-weight:lighter; font-family: sans-serif">
+					{{ post.text|linebreaksbr }}
+				</p>
+			</article>
+		</div>
+	{% endfor %}
+{% endblock %}
