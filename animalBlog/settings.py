@@ -123,12 +123,9 @@ STATIC_URL = 'static/'
 #     os.path.join(BASE_DIR, 'static')
 # ]
 
-if DEBUG:
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static')
-   ]
-else:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+import sys
+if sys.argv[1] != 'runserver':
+    STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 MEDIA_URL= '/images/'
 MEDIA_ROOT= os.path.join(BASE_DIR, 'static/images')
